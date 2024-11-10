@@ -17,8 +17,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 0.7 0 0;
+    flex: 1 0 0;
     gap: 10px;
+    white-space: nowrap;
 }
 
 .menuActive {
@@ -39,10 +40,10 @@ nav {
 
 .navGiggle {
     display: flex;
+    flex: 1;
     width: auto;
     justify-content: center;
     align-items: center;
-    padding-left: 100px;
     flex-shrink: 0;
 }
 
@@ -58,11 +59,10 @@ nav {
 
 .navButton {
     display: flex;
-    padding-left: 50px;
+    flex: 1;
     justify-content: flex-end;
     align-items: center;
     gap: 27px;
-    flex: 1 0 0;
 }
 
 .fontButton{
