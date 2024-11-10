@@ -39,3 +39,6 @@ h1:hover {
     -webkit-text-stroke: 3px var(--White, #FFF);
 }
 
+button {
+    cursor: pointer;
+}
