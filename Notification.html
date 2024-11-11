@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Notification</title>
+    <link rel="stylesheet" href="css/Notification.css">
+</head>
+<body>
+
+    <nav>
+        <div class="navMenu">
+            <div class="menuActive">Home</div>
+            <div class="menuNonActive">Gallery</div>
+            <div class="menuNonActive">Jobs</div>
+            <div class="menuNonActive">About Us</div>
+        </div>
+    
+        <div class="navGiggle">
+            <div class="giggle">Giggle’s</div>
+        </div>
+    
+        <div class="navRight">
+            <div class="notification"><img src="src/icnNotification.png" alt="" style="width:30px;"></div>
+            <div class="profile">
+                <img src="src/profile.png" alt="" style="width: 75px;">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="notification-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="notification-header">Notification</h5>
+                <div>
+                    <a href="#" class="text-white mr-3">Mark as read</a> 
+                    <a href="#" class="text-clear">Clear all</a> 
+                </div>
+                
+            </div>
+
+            <div>
+                <h6>Today</h6>
+                <div class="notification-item">
+                    <img src="src/profile.png" alt="User Avatar">
+                    <div class="notification-text">
+                        <strong>Aufa Sarifatun</strong> commented on your post.
+                        <div class="notification-time">1 hour ago</div>
+                    </div>
+                    <div class="project-preview">
+                        <img src="src/projek.png" alt="Project Thumbnail">
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <img src="src/profile.png" alt="User Avatar">
+                    <div class="notification-text">
+                        <strong>Rayhanna A</strong> sent you a request.
+                        <div class="notification-time">2 hours ago</div>
+                    </div>
+                    <div class="notification-buttons">
+                        <button class="btn-accept">Accept</button>
+                        <button class="btn-decline">Decline</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="bg-light">
+
+            <div>
+                <h6>Yesterday</h6>
+                <div class="notification-item">
+                    <img src="src/profile.png" alt="User Avatar">
+                    <div class="notification-text">
+                        <strong>Avriliana</strong> sent you a request.
+                        <div class="notification-time">26 hours ago</div>
+                    </div>
+                    <div class="notification-buttons">
+                        <button class="btn-accept">Accept</button>
+                        <button class="btn-decline">Decline</button>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <img src="src/profile.png" alt="User  Avatar" class="user-avatar">
+                    <div class="notification-content">
+                        <div class="notification-text">
+                            <strong>Fikko Muharavid</strong> commented on your post.
+                            <div class="notification-time">30 hours ago</div>
+                        </div>
+                        <div class="project-preview">
+                            <img src="src/projek.png" alt="Project Thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>Contact Us</h2><br>
+        <p style="text-align: center; padding: 20px; line-height: 2;">
+            Gigglecorps@company.com <br>
+            (123) 29389 9283 9389 <br><br>
+            21 Surabaya,  Indonesian, 33121 <br>
+        </p>
+
+        <div class="containerIcn">
+            <a href=""><div class="icnFooter">
+                <i class="bi bi-facebook" style="font-size: 45px; color: #B04E75;"></i>
+            </div></a>
+            <a href=""><div class="icnFooter">
+                <i class="bi bi-twitter" style="font-size: 45px; color: #B04E75;"></i>
+            </div></a>
+            <a href=""><div class="icnFooter">
+                <i class="bi bi-instagram" style="font-size: 45px; color: #B04E75;"></i>
+            </div></a>
+            <a href=""><div class="icnFooter">
+                <i class="bi bi-linkedin" style="font-size: 45px; color: #B04E75;"></i>
+            </div></a>
+        </div>
+
+    </footer>
+</section>
+
+    <script>
+        document.querySelectorAll('.category-button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove 'selected' class from all buttons
+                document.querySelectorAll('.category-button').forEach(btn => btn.classList.remove('selected'));
+        
+                // Add 'selected' class to the clicked button
+                button.classList.add('selected');
+            });
+        });
+    </script>
+
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
