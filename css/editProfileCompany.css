@@ -33,6 +33,7 @@ body {
   border-radius: 22px;
 }
 
+
 .header {
   position: absolute;
   margin-top: 2%;
@@ -133,6 +134,10 @@ h3 {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form input {
+  width: 95%;
 }
 
 input {

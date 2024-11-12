@@ -17,10 +17,10 @@
   <body>
     <nav>
       <div class="navMenu">
-        <div class="menuActive">Home</div>
-        <div class="menuNonActive">Gallery</div>
-        <div class="menuNonActive">Jobs</div>
-        <div class="menuNonActive">About Us</div>
+        <a href="Home.html"><div class="menuActive">Home</div></a>
+        <a href=""><div class="menuNonActive">Gallery</div></a>
+        <a href=""><div class="menuNonActive">Jobs</div></a>
+        <a href="About.html"><div class="menuNonActive">About Us</div></a>
       </div>
 
       <div class="navGiggle">
@@ -29,12 +29,49 @@
 
       <div class="navRight">
         <div class="notification">
-          <img src="src/icnNotification.png" alt="" style="width: 30px" />
+          <a href="Notification.html"><img src="src/icnNotification.png" alt="" style="width: 30px" /></a>
         </div>
         <div class="profile">
-          <img src="src/profile.png" alt="" style="width: 75px" />
+          <img
+            src="src/profile.png"
+            class="profile-icon"
+            alt=""
+            style="width: 75px"
+            onclick="toggleDropdown()"
+          />
+          <div
+            class="dropdown-menu"
+            id="dropdownMenu"
+            style="z-index: 10000"
+            onclick="event.stopPropagation()"
+          >
+            <a href="Company-About.html" class="dropdown-item">
+              <span class="bi bi-person"></span>
+              <p>Profile</p></a
+            >
+            <a href="#" class="dropdown-item">
+              <span class="bi bi-box-arrow-right"></span>
+              <p>Sign Out</p></a
+            >
+          </div>
         </div>
       </div>
+      <script>
+        function toggleDropdown() {
+          var dropdown = document.getElementById("dropdownMenu");
+          dropdown.style.display =
+            dropdown.style.display === "block" ? "none" : "block";
+        }
+        // Close the dropdown if clicked outside
+        window.onclick = function (event) {
+          if (!event.target.matches(".profile-icon")) {
+            var dropdown = document.getElementById("dropdownMenu");
+            if (dropdown && dropdown.style.display === "block") {
+              dropdown.style.display = "none";
+            }
+          }
+        };
+      </script>
     </nav>
 
     <div class="header">
@@ -63,10 +100,9 @@
           "
         />
 
-        <div class="form" style="margin-top: 30px">
+        <div class="form" style="margin-top: 30px;; ">
           <h3>Headline</h3>
           <input
-         
             placeholder="Type here..."
           />
         </div>
@@ -74,7 +110,6 @@
         <div class="form" style="margin-top: 20px">
           <h3>Body</h3>
           <input
-          
             placeholder="Type here..."
           />
         </div>
@@ -82,7 +117,6 @@
         <div class="form" style="margin-top: 20px">
           <h3>Visi</h3>
           <input
-         
             placeholder="Type here..."
           />
         </div>
