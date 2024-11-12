@@ -233,11 +233,17 @@ input[placeholder="Enter your location"] {
     right: 0;
     margin-top: 4%;
     margin-right: 5px;
-    justify-content: flex-end;
-    align-items: end;
+    
   }
   
-
+  .buttonSave1 {
+    position: absolute;
+    right: 0;
+    margin-top: 4%;
+    margin-right: 5px;
+    
+  }
+  
 
 
 /*tulisan kyle*/

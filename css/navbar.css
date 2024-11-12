@@ -65,11 +65,12 @@ nav {
     gap: 27px;
 }
 
+
 .fontButton{
     text-align: center;
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
     font-family: Inter;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -78,7 +79,7 @@ nav {
 .login {
     display: flex;
     height: 40px;
-    padding: 6px 25px;
+    padding: 5px 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -93,7 +94,7 @@ nav {
 .signUp {
     display: flex;
     height: 40px;
-    padding: 6px 25px;
+    padding: 1px 25px;
     justify-content: center;
     align-items: center;
     gap: 10px;
