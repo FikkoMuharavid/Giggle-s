@@ -1,0 +1,399 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../src/Background2.png");
+}
+
+.containerEditProfile {
+  margin: 5% 4%;
+  min-height: 120vh;
+  
+  background: rgba(153, 153, 153, 0.26);
+  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
+  backdrop-filter: blur(17px);
+  border-radius: 22px;
+  padding-bottom: 20px;
+}
+
+.containerEditSocialProfile {
+  margin: 5% 4%;
+  height: 120vh;
+  max-height: 900px;
+  background: rgba(153, 153, 153, 0.26);
+  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
+  backdrop-filter: blur(17px);
+  border-radius: 22px;
+}
+
+.containerEditResume {
+  margin: 5% 4%;
+  height: 100vh;
+  max-height: 850px;
+  background: rgba(153, 153, 153, 0.26);
+  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
+  backdrop-filter: blur(17px);
+  border-radius: 22px;
+}
+
+.containerEditWorkSpace {
+  margin: 5% 4%;
+  height: 150vh;
+  max-height: 1080px;
+  background: rgba(153, 153, 153, 0.26);
+  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
+  backdrop-filter: blur(17px);
+  border-radius: 22px;
+}
+
+.header {
+  position: absolute;
+  margin-top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 13%;
+  width: 85vw;
+  border-radius: 22px;
+  background: rgba(153, 153, 153, 0.26);
+  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
+  backdrop-filter: blur(17px);
+  z-index: 99;
+}
+
+.containerHeader {
+  display: flex;
+  width: auto;
+  padding: 1.7% 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-item {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-item.active {
+  text-shadow: 0px 0px 5px #b04e75;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.header-item.active {
+  text-shadow: 0px 0px 5px #b04e75;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.containerEdit {
+  position: absolute;
+  width: 82%;
+  height: auto;
+  margin: 6% 5%;
+  padding: 2% 4%;
+  border-radius: 25px;
+  fill: rgba(153, 153, 153, 0.26);
+  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
+  backdrop-filter: blur(17px);
+}
+
+.tittle {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+  /* H1/Semi Bold 40 */
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.change {
+    
+        position: absolute;
+        right: 0; /* Memposisikan tombol di sebelah kanan */
+        top: 15%; /* Mengubah top untuk posisi lebih ke atas */
+        transform: translateY(-50%); /* Menyesuaikan posisi vertikal agar pas di tengah */
+        margin-top: 0; /* Hapus margin-top agar lebih terkendali */
+        margin-right: 20px;
+      }
+      
+
+button {
+  padding: 17px 3%;
+  border: none;
+  border-radius: 35px;
+  font-size: 23px;
+  background: var(--Primary, rgba(176, 78, 117, 0.95));
+  box-shadow: 0px 4px 8.5px 3px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10.600000381469727px);
+  justify-content: flex-end;
+}
+
+h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Membuat semua elemen berada dalam satu kolom */
+    gap: 20px; /* Menambahkan jarak antar elemen */
+  }
+  
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 10px;
+  padding: 25px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 11.6px 0px rgba(0, 0, 0, 0.66) inset;
+  color: #ddd;
+  outline: none;
+  font-size: 20px;
+}
+
+input[placeholder="Enter your location"] {
+    width: 100%;  /* Lebar penuh kontainer */
+    height: 120px; /* Atur tinggi sesuai keinginan */
+  }
+
+
+
+/* Post Job */
+.containerCategory {
+  margin-top: 20px;
+  background-color: rgba(153, 153, 153, 0.26);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 60%;
+  box-shadow: 0px 0px 11.6px 0px rgba(0, 0, 0, 0.66) inset;
+}
+.tag {
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid #ffffff9c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.tag.active {
+  background: var(--Primary, rgba(176, 78, 117, 0.95));
+}
+.tag span {
+  margin-left: 10px;
+  color: #ffffff;
+}
+.tag.active span {
+  color: #fff;
+}
+.input-containerCategory {
+  flex-basis: 100%;
+}
+.input-containerCategory input {
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+  font-size: 16px;
+}
+.input-containerCategory input::placeholder {
+  font-size: 16px;
+}
+.btnSecondary {
+  padding: 10px 25px;
+  color: #b04e75;
+  border-radius: 33px;
+  border: 3px solid #b04e75;
+  background: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.buttonSave {
+    position: absolute;
+    right: 0;
+    margin-top: 4%;
+    margin-right: 5px;
+    justify-content: flex-end;
+    align-items: end;
+  }
+  
+
+
+
+/*tulisan kyle*/
+.profile-container {
+    display: flex;
+    align-items: center; /* Menyelaraskan secara vertikal */
+    gap: 25px; /* Jarak antara foto dan teks */
+  }
+  
+  .profile-name {
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .underline {
+    background: #fff; /* Warna garis */
+    height: 2px; /* Ketebalan garis */
+    width: 250%; /* Lebar garis sesuai teks */
+    margin-top: 4px; /* Jarak dari teks ke garis */
+  }
+  
+
+/*/////////////////////////////////*/
+.containerEdit.new-section{
+    position: absolute;
+    width: 82%;
+    height: auto;
+    margin: 6% 5%;
+    padding: 2% 4%;
+    border-radius: 25px;
+    fill: rgba(153, 153, 153, 0.26);
+    filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(17px);
+}
+.divider {
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25);
+    height: 2px; /* Ketebalan garis */
+    width: 100%; /* Panjang garis sesuai lebar kontainer */
+    margin: 10px 0; /* Jarak atas dan bawah */
+  }
+  
+
+.remove-btn {
+    background: none;
+    color: #b04e75;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: right;
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.form-grid-edit {
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr; /* Default jadi satu kolom */
+    gap: 4%;
+}
+
+.form-group-edit {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tampilan khusus untuk Additional Work History */
+.work-history .two-column {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antar elemen */
+}
+
+.work-history .two-column input[type="text"] {
+    width: 45%; /* Agar input bersebelahan */
+}
+
+.at-text {
+    margin: 0 5px; /* Jarak untuk teks "at" */
+}
+
+/* Tampilan khusus untuk Additional Education */
+.education .three-column {
+    display: flex;
+    gap: 10px;
+}
+
+.education .three-column input[type="text"] {
+    width: 33%; /* Membagi tiga kolom */
+}
+
+/*//////////////////////option//////////////////////*/
+.options-group {
+    display: flex;
+    flex-direction: column; /* Mengatur layout agar bersusun secara vertikal */
+    align-items: flex-start; /* Mengatur posisi ke kiri */
+    gap: 10px; /* Menambahkan jarak antar opsi */
+}
+
+.custom-radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 2px solid #c2185b;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    width: 150px; /* Mengatur lebar tetap */
+    max-width: 150px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.custom-radio:hover {
+    transform: scale(1.05);
+}
+
+.label-text {
+    font-size: 16px;
+    color: #c2185b;
+    font-weight: bold;
+}
+
+.radio-circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #c2185b;
+    border-radius: 50%;
+    position: relative;
+}
+
+.radio-circle::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #c2185b;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .label-text + .radio-circle::after {
+    opacity: 1;
+}
