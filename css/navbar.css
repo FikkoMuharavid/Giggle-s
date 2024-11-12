@@ -118,7 +118,55 @@ nav {
 .profile {
     width: 74px;
     height: 74px;
+    cursor: pointer;
     
     /* stroke-width: 20px;
     stroke: #B04E75; */
 }
+
+
+/* Dropdown Navbar*/
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute !important;
+    top: -10px; /* Sesuaikan posisi sesuai kebutuhan */
+    right: 100px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    z-index: 9999 !important;
+    padding: 10px 0;
+    width: auto;
+  }
+  /* Styling untuk setiap item di dropdown */
+  .dropdown-item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 9999;
+  }
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  /* Styling untuk icon di dropdown item */
+  .dropdown-item span {
+    margin-right: 8px;
+    color: black;
+    font-size: 25px;
+  }
+  .dropdown-item p {
+    color: #B04E75 !important;
+    padding-left: 9px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .navRight .profile {
+    position: relative;
+    display: inline-block;
+  }
