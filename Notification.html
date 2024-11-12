@@ -27,10 +27,49 @@
         <div class="navRight">
             <div class="notification"><img src="src/icnNotification.png" alt="" style="width:30px;"></div>
             <div class="profile">
-                <img src="src/profile.png" alt="" style="width: 75px;">
+                <img
+                  src="src/profile.png"
+                  class="profile-icon"
+                  alt=""
+                  style="width: 75px"
+                  onclick="toggleDropdown()"
+                />
+                <div
+                  class="dropdown-menu"
+                  id="dropdownMenu"
+                  style="z-index: 10000"
+                  onclick="event.stopPropagation()"
+                >
+                  <a href="user-post.html" class="dropdown-item">
+                    <span class="bi bi-person"></span>
+                    <p>Profile</p></a
+                  >
+                  <a href="#" class="dropdown-item">
+                    <span class="bi bi-box-arrow-right"></span>
+                    <p>Sign Out</p></a
+                  >
+                </div>
+              </div>
             </div>
+            <script>
+              function toggleDropdown() {
+                var dropdown = document.getElementById("dropdownMenu");
+                dropdown.style.display =
+                  dropdown.style.display === "block" ? "none" : "block";
+              }
+              // Close the dropdown if clicked outside
+              window.onclick = function (event) {
+                if (!event.target.matches(".profile-icon")) {
+                  var dropdown = document.getElementById("dropdownMenu");
+                  if (dropdown && dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                  }
+                }
+              };
+            </script>
         </div>
-    </nav>
+    </nav>   
+
 
     <div class="container mt-5">
         <div class="notification-card">
