@@ -329,3 +329,47 @@ body {
     height: 100%;
     border-left: 2px solid #fff;
 }
+/*////////////////////////////CONTACTS///////////////////////////////////*/
+/* Kontainer utama untuk bagian kontak */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Lebar kotak utama */
+    height: 400px; /* Tinggi kotak utama */
+    margin: 0 auto; /* Memposisikan kotak utama di tengah halaman */
+    background-color: #333; /* Warna background kotak */
+    border-radius: 12px; /* Sudut tumpul pada kotak */
+  }
+  
+  /* Styling untuk bagian kontak di dalam kotak */
+  
+  .contact-section {
+display: flex;
+    justify-content: center;  /* Memusatkan konten secara horizontal */
+    align-items: center;      /* Memusatkan konten secara vertikal */
+    gap: 50px;
+    color: white;
+    height: 60vh;            /* Membuat tinggi penuh untuk memusatkan secara vertikal */
+  }
+  
+  .contact-column {
+    display: flex;
+    flex-direction: column;
+    position: center;
+    gap: 20px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .icon {
+    width: 32px;
+    height: 32px;
+    background-color: #555;
+    border-radius: 6px;
+    padding: 8px;
+  }
