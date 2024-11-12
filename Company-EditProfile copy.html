@@ -40,10 +40,10 @@
     <div class="header">
       <div class="containerHeader">
         <a href="Company-EditProfile.html"
-          ><div class="header-item">Edit Profile</div></a
+          ><div class="header-item active">Edit Profile</div></a
         >
         <a href="Company-EditAbout.html"
-          ><div class="header-item active">About</div></a
+          ><div class="header-item">About</div></a
         >
         <a href="Company-EditPostJob.html"
           ><div class="header-item">Post a Jobs</div></a
@@ -52,29 +52,41 @@
       <hr style="margin: 0 2%; margin-top: -0.5%; border-width: 2px" />
     </div>
 
-    <div class="containerEditAbout">
+    <div class="containerEditProfile">
       <div class="containerEdit">
-        <div class="tittle">About Company</div>
-        <hr
-          style="
-            margin-top: 13px;
-            border-width: 2px;
-            box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25);
-          "
-        />
-
-        <div class="form" style="margin-top: 30px">
-          <h3>Headline</h3>
-          <input
-         
-            placeholder="Type here..."
-          />
+        <div class="changephoto">
+          <img src="src/profile.png" alt="" style="width: 95px" />
+          <button class="change" style="margin-left: 3%">Change Photo</button>
         </div>
 
-        
-         
+        <div class="form-grid">
+          <div class="form-group">
+            <h3>Company Name</h3>
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <div class="form-group">
+            <h3>Email</h3>
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <div class="form-group">
+            <h3>Company Address</h3>
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <div class="form-group">
+            <h3>Phone Number</h3>
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <div class="form-group">
+            <h3>Location</h3>
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <div class="form-group">
+            <h3>Website</h3>
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <br /><br />
         </div>
-       
+        <button class="buttonSave">Save Profile</button>
       </div>
     </div>
   </body>

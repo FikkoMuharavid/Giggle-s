@@ -43,18 +43,18 @@
           ><div class="header-item">Edit Profile</div></a
         >
         <a href="Company-EditAbout.html"
-          ><div class="header-item active">About</div></a
+          ><div class="header-item">About</div></a
         >
         <a href="Company-EditPostJob.html"
-          ><div class="header-item">Post a Jobs</div></a
+          ><div class="header-item active">Post a Jobs</div></a
         >
       </div>
       <hr style="margin: 0 2%; margin-top: -0.5%; border-width: 2px" />
     </div>
 
-    <div class="containerEditAbout">
+    <div class="containerEditPost">
       <div class="containerEdit">
-        <div class="tittle">About Company</div>
+        <div class="tittle">Post a Job</div>
         <hr
           style="
             margin-top: 13px;
@@ -64,17 +64,54 @@
         />
 
         <div class="form" style="margin-top: 30px">
-          <h3>Headline</h3>
+          <h3>Position</h3>
           <input
-         
+            type="text"
+            name=""
+            id=""
+            style="width: 95%"
             placeholder="Type here..."
           />
         </div>
 
-        
-         
+        <div class="form" style="margin-top: 20px">
+          <h3>Category</h3>
+
+          <div class="containerCategory">
+            <div class="tag active">UI/UX</div>
+            <div class="tag active">Technology</div>
+            <div class="tag">Strategy <span>+</span></div>
+            <div class="tag">Interfaces <span>+</span></div>
+            <div class="tag">Programming <span>+</span></div>
+            <div class="tag">Writing <span>+</span></div>
+            <div class="tag active">Web Design</div>
+            <div class="tag">Art & Illustration <span>+</span></div>
+            <div class="input-containerCategory">
+              <input type="text" placeholder="Other" />
+            </div>
+          </div>
         </div>
-       
+
+        <div class="form" style="margin-top: 20px">
+          <h3>Description</h3>
+          <input
+            type="text"
+            name=""
+            id=""
+            style="width: 95%"
+            placeholder="Type here..."
+          />
+        </div>
+
+        <div class="form" style="margin-top: 20px">
+          <h3>Photo</h3>
+          <button class="btnSecondary" style="margin-top: 10px">
+            Upload Photo
+          </button>
+        </div>
+
+        <style></style>
+        <button class="buttonSave">Save Profile</button>
       </div>
     </div>
   </body>

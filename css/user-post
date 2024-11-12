@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navedit.css">
+    <link rel="stylesheet" href="css/userpost.css">
+    <title>Home - Giggle’s</title>
+    <link rel="icon" type="image/png" href="src/Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="navMenu">
+            <div class="menuActive">Home</div>
+            <div class="menuNonActive">Gallery</div>
+            <div class="menuNonActive">Jobs</div>
+            <div class="menuNonActive">About Us</div>
+        </div>
+
+        <div class="navGiggle">
+            <div class="giggle">Giggle’s</div>
+        </div>
+
+        <div class="navButton">
+            <div class="signUp">
+                <div class="fontButton">Edit Profile</div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="header">
+            <div class="containerHeader">
+                <a href="User-.html"><div class="header-item active">Post</div></a>
+                <a href="user-socialProfile.html"><div class="header-item">Collection</div></a>
+                <a href="user-EditResume.html"><div class="header-item">Stars</div></a>
+                <a href="user-EditWorkSpace.html"><div class="header-item">Contacts</div></a>
+            </div>
+            <hr style="margin: 0 2%; margin-top: -0.5%; border-width: 2px" />
+        </div>
+
+        <div class="containerPost">
+            <div class="uploadContainer">
+                <h3>Upload your first post!</h3>
+                <p>Unggah postingan Anda dengan mudah, tambahkan judul serta deskripsi untuk karya yang dibuat, sertakan juga proses pengerjaan yang bisa menambah nilai serta menarik perhatian pengguna lainnya.</p>
+                <button class="btnUpload">Upload</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

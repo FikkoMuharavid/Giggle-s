@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>Home - Giggle’s</title>
+    <link rel="icon" type="image/png" href="src/Logo.png">
+</head>
+
+<style>
+    header { 
+        height: 100vh;
+        width: 100%;
+        background: url("src/Background1.png");
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("src/Background2.png");
+    }
+
+    .containerHeader {
+        display: flex;
+        height: 80%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 28px;
+        flex-direction: column;
+    }
+   
+    button {
+        padding: 17px 4%;
+        border: none;
+        border-radius: 35px;
+        font-size: 23px;
+        background: var(--Primary, rgba(176, 78, 117, 0.95));
+        box-shadow: 0px 4px 8.5px 3px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10.600000381469727px);   
+    }
+
+    .title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 20px;
+        background: rgba(153, 153, 153, 0.26);
+        box-shadow: 0px 4px 35px 13px rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(17.5px);
+    }
+
+    .containerCarousel {
+        display: flex;
+        flex-direction: column; /* Mengatur container untuk menumpuk kartu dan tombol */
+        align-items: center; /* Memusatkan kartu dan tombol */
+        gap: 20px;
+        justify-content: center;
+        margin: 4% 6% 0% 6%;
+        padding: 4% 6% 4% 6%;
+        border-radius: 40px;
+        background: rgba(153, 153, 153, 0.26);
+        box-shadow: 0px 4px 35px 13px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(17.5px);
+    }
+
+    .carouselCards {
+        display: flex;
+        gap: 5%;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+    }
+
+    .imgCard {
+        width: 100%;
+        height: 40vh;
+        align-self: stretch;
+        border-radius: 40px 40px 0px 0px;
+
+        box-shadow: 0px 4px 35px 13px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(17.5px);
+        object-fit: cover;
+    }
+
+    .txtCard {
+        display: flex;
+        height: 90px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        border-radius: 0px 0px 40px 40px;
+        background: rgba(153, 153, 153, 0.26);
+    }
+
+    .sliderLeft {
+        position: absolute;
+        top: 35%;
+        left: -20px;
+        padding: 20px;
+        border-radius: 22px;
+        background: var(--Primary, rgba(176, 78, 117, 0.95));
+        box-shadow: 0px 4px 8.5px 3px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10.600000381469727px);
+    }
+
+    .sliderRight {
+        position: absolute;
+        top: 35%;
+        right: -20px;
+        padding: 20px;
+        border-radius: 22px;
+        background: var(--Primary, rgba(176, 78, 117, 0.95));
+        box-shadow: 0px 4px 8.5px 3px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10.600000381469727px);
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="navMenu">
+                <div class="menuActive">Home</div>
+                <div class="menuNonActive">Gallery</div>
+                <div class="menuNonActive">Jobs</div>
+                <div class="menuNonActive">About Us</div>
+            </div>
+
+            <div class="navGiggle">
+                <div class="giggle">Giggle’s</div>
+            </div>
+
+            <div class="navButton">
+                <div class="login"><div class="fontButton"> Login </div></div>
+                <div class="signUp"><div class="fontButton"> Sign Up </div></div>
+            </div>
+        </nav>
+
+        <div class="containerHeader">
+            <h2>Designed for impact, built<br> for growth.</h2>
+            <p>Crafted with creativity, designed to inspire. Discover unique <br>designs to elevate your brand. Ready for you to make them yours.</p>
+
+            <button style="margin-top: 1%;">See More -></button>
+        </div>
+    </header>
+
+    <section>
+        <div class="title">
+            <h2>Popular Design</h2>
+            <p>We offer a variety of design services <br>
+                to help you make a lasting impression.</p>
+        </div>
+        
+        <div class="containerCarousel">
+            <div class="sliderLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="29" viewBox="0 0 16 29" fill="none">
+                    <path d="M14.125 1.375L1 14.5L14.125 27.625" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="sliderRight">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="29" viewBox="0 0 16 29" fill="none">
+                    <path d="M1.875 27.625L15 14.5L1.875 1.375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="carouselCards">
+                <div class="card">
+                    <img class="imgCard" src="src/Background2.png" alt="">
+                    <div class="txtCard">Mobile App</div>
+                </div>
+                <div class="card">
+                    <img class="imgCard" src="src/Background1.png" alt="">
+                    <div class="txtCard">Desktop App</div>
+                </div>
+                <div class="card">
+                    <img class="imgCard" src="src/Background1.png" alt="">
+                    <div class="txtCard">Web App</div>
+                </div>
+            </div>
+            <button style="margin-top: 1%;">See More</button>
+        </div>
+        <br><br><br><br>
+    </section>
+
+    <section>
+        <div class="title">
+            <h2>Popular Jobs Category</h2>
+            <p>Popular Jobs Category Browse through a wide selection of popular job categories.<br> Find your dream job today!</p>
+        </div>
+
+        <style>
+            .job-grid-container {
+                display: grid;
+                gap: 4vh 3vw;
+                padding: 4%;
+                grid-template-columns: repeat(4, 1fr); /* Default 4 kolom */
+            }
+        
+            .job-card {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                padding: 6%;
+                height: 10vh;
+                border-radius: 20px;
+                background: rgba(153, 153, 153, 0.26);
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(10px);
+            }
+        
+            .job-card img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        
+            .job-title {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                margin-bottom: 8px;
+            }
+        
+            /* Media Queries untuk menyesuaikan jumlah kolom */
+            @media (max-width: 1200px) {
+                .job-grid-container {
+                    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+                }
+            }
+        
+            @media (max-width: 768px) {
+                .job-grid-container {
+                    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+                }
+            }
+        
+            @media (max-width: 480px) {
+                .job-grid-container {
+                    grid-template-columns: 1fr; /* 1 kolom */
+                }
+            }
+        </style>
+        
+        <div class="job-grid-container">
+            <div class="job-card">
+                <img src="src/Background1.png" alt="Programmer Icon">
+                <div class="job-details">
+                    <div class="job-title">Programmer</div>
+                    <p>1000 Jobs</p>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="src/Background1.png" alt="Illustrator Icon">
+                <div class="job-details">
+                    <div class="job-title">Illustrator</div>
+                    <div class="job-count">1200 Jobs</div>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="src/Background1.png" alt="Web Design Icon">
+                <div class="job-details">
+                    <div class="job-title">Web Design</div>
+                    <div class="job-count">5555 Jobs</div>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="src/Background1.png" alt="Writing Icon">
+                <div class="job-details">
+                    <div class="job-title">Writing</div>
+                    <div class="job-count">8979 Jobs</div>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="src/Background1.png" alt="Photography Icon">
+                <div class="job-details">
+                    <div class="job-title">Photography</div>
+                    <div class="job-count">800 Jobs</div>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="src/Background1.png" alt="UI/UX Icon">
+                <div class="job-details">
+                    <div class="job-title">UI/UX</div>
+                    <div class="job-count">1234 Jobs</div>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="src/Background1.png" alt="Interfaces Icon">
+                <div class="job-details">
+                    <div class="job-title">Interfaces</div>
+                    <div class="job-count">6767 Jobs</div>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="src/Background1.png" alt="Strategy Icon">
+                <div class="job-details">
+                    <div class="job-title">Strategy</div>
+                    <div class="job-count">1200 Jobs</div>
+                </div>
+            </div><br>
+        </div>
+    </section>
+
+    <section>
+        <div class="title">
+            <h2>How to create a perfect resume</h2>
+            <p style="padding: 0px 8vw;">How to create a perfect resume is a guide or set of steps explaining how to craft an effective resume that attracts the attention of recruiters or companies.  A good resume should highlight relevant skills, experience, and accomplishments tailored to the job being applied for. It should be written in a clean, easy-to-read format and customized for the specific position. </p>
+        </div>
+
+        <style>
+            .feature-container {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                padding: 3%;
+                margin: 4%;
+                background: rgba(153, 153, 153, 0.26);
+                border-radius: 20px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(10px);
+                color: white;
+                font-family: Arial, sans-serif;
+            }
+        
+            .video-container {
+                flex: 1;
+                height: 45vh;
+                max-width: 40vw;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+        
+            .content-container {
+                flex: 1;
+            }
+        
+            .content-container h2 {
+                font-size: 25px;
+                color: #fff;
+                margin-top: 15px;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+        
+        </style>
+        
+        <div class="feature-container">
+            <div class="video-container">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QnUI3sLZ4hc?si=llOdC5GCAK--xAQI" ></iframe>
+            </div>
+            <div class="content-container">
+                <p>
+                    By creating a visual guide along the way, the designer or developer can get input from the other people
+                    involved in the website such as the customer, their manager, and other members of the team.
+                </p>
+                <h2>Feature One</h2>
+                <p>
+                    By creating a visual guide along the way, the designer or developer can get input from the other people.
+                </p>
+                <h2>Feature Two</h2>
+                <p>
+                    By creating a visual guide along the way, the designer or developer can get input from the other people.
+                </p>
+            </div>
+        </div><br><br>
+
+        <style>
+            footer {
+                padding: 3%;
+                background: rgba(0, 0, 0, 0.71);
+                box-shadow: 0px 0px 45px 40px rgba(0, 0, 0, 0.685);
+                backdrop-filter: blur(25px);
+            }
+
+            .containerIcn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2%;
+            }
+
+            .icnFooter {
+                width: 40px;
+                height: 40px;
+                padding: 15px 15px;
+                border-radius: 5px;
+                background: rgba(255, 255, 255, 0.12);
+                box-shadow: 0px 0px 6.4px 0px rgba(255, 255, 255, 0.25);
+                backdrop-filter: blur(8.199999809265137px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .icnFooter:hover i {
+                color: white;
+            }
+        </style>
+
+        <footer>
+            <h2>Contact Us</h2><br>
+            <p style="text-align: center; padding: 20px; line-height: 2;">
+                Gigglecorps@company.com <br>
+                (123) 29389 9283 9389 <br><br>
+                21 Surabaya,  Indonesian, 33121 <br>
+            </p>
+
+            <div class="containerIcn">
+                <a href=""><div class="icnFooter">
+                    <i class="bi bi-facebook" style="font-size: 45px; color: #B04E75;"></i>
+                </div></a>
+                <a href=""><div class="icnFooter">
+                    <i class="bi bi-twitter" style="font-size: 45px; color: #B04E75;"></i>
+                </div></a>
+                <a href=""><div class="icnFooter">
+                    <i class="bi bi-instagram" style="font-size: 45px; color: #B04E75;"></i>
+                </div></a>
+                <a href=""><div class="icnFooter">
+                    <i class="bi bi-linkedin" style="font-size: 45px; color: #B04E75;"></i>
+                </div></a>
+            </div>
+
+        </footer>
+    </section>
+
+
+
+
+</body>
+
+</html>
