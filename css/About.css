@@ -1,0 +1,161 @@
+/* Global styling */
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("Background1.png") lightgray 50% / cover no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  /* Navbar styling */
+  nav {
+    display: flex;
+    max-width: 100vw;
+    padding: 15px 20px;
+    align-items: center;
+    gap: 116px;
+    border-bottom: 1px solid #B04E75;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 35px 13px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(17.5px);
+  }
+  
+  .navMenu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+  }
+  
+  .menuActive {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
+    font-size: 24px;
+    font-weight: 800;
+  }
+  
+  .menuNonActive {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .navGiggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .giggle {
+    text-align: center;
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.30);
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  .navRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile img {
+    border-radius: 50%;
+  }
+  
+ /* Container */
+.containerSection {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.30);/* Dark transparent background */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.hero-section .logo {
+    width: 100px; /* Adjust the width of the logo image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Spacing below the logo */
+}
+
+.hero-section .logo-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.description-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #ffffff;
+}
+
+/* Container */
+.containerSection {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: transparent; /* Ensure no white background */
+}
+
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 20px 10px;
+    background-color:rgba(255, 255, 255, 0.1);  /* Dark transparent background */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.team-section h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+.divider {
+    width: 50%;
+    margin: 20px auto;
+    border-top: 2px solid #ffffff;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid #ffffff;
+}
+
+/* Add spacing between the rows */
+.team-section .container .row:first-child {
+    margin-bottom: 20px; /* Adjust this value for more or less spacing */
+}
+
+.team-section-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #ffffff;
+}
+
+
