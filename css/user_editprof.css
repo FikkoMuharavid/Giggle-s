@@ -4,15 +4,17 @@ body {
 }
 
 .containerEditProfile {
-  margin: 5% 4%;
-  min-height: 120vh;
-  
-  background: rgba(153, 153, 153, 0.26);
-  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
-  backdrop-filter: blur(17px);
-  border-radius: 22px;
-  padding-bottom: 20px;
+    margin: 5% 4%;
+    height: 100vh;
+    max-height: 850px;
+    background: rgba(153, 153, 153, 0.26);
+    filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(17px);
+    border-radius: 22px;
+ 
 }
+
+
 
 .containerEditSocialProfile {
   margin: 5% 4%;
@@ -233,11 +235,17 @@ input[placeholder="Enter your location"] {
     right: 0;
     margin-top: 4%;
     margin-right: 5px;
-    justify-content: flex-end;
-    align-items: end;
+    
   }
   
-
+  .buttonSave1 {
+    position: absolute;
+    right: 0;
+    margin-top: 4%;
+    margin-right: 5px;
+    
+  }
+  
 
 
 /*tulisan kyle*/

@@ -9,15 +9,22 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/editProfileCompany.css" />
     <title>Home - Giggle’s</title>
     <link rel="icon" type="image/png" href="src/Logo.png" />
   </head>
 
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: url("src/Background1.png") lightgray 50% / cover no-repeat;
+    }
+  </style>
+
   <body>
     <nav>
       <div class="navMenu">
-        <a href="Home.html"><div class="menuActive">Home</div></a>
+        <a href="HomeCompany.html"><div class="menuActive">Home</div></a>
         <a href=""><div class="menuNonActive">Gallery</div></a>
         <a href=""><div class="menuNonActive">Jobs</div></a>
         <a href="About.html"><div class="menuNonActive">About Us</div></a>
@@ -73,62 +80,5 @@
         };
       </script>
     </nav>
-
-    <div class="header">
-      <div class="containerHeader">
-        <a href="Company-EditProfile.html"
-          ><div class="header-item">Edit Profile</div></a
-        >
-        <a href="Company-EditAbout.html"
-          ><div class="header-item active">About</div></a
-        >
-        <a href="Company-EditPostJob.html"
-          ><div class="header-item">Post a Jobs</div></a
-        >
-      </div>
-      <hr style="margin: 0 2%; margin-top: -0.5%; border-width: 2px" />
-    </div>
-
-    <div class="containerEditAbout">
-      <div class="containerEdit">
-        <div class="tittle">About Company</div>
-        <hr
-          style="
-            margin-top: 13px;
-            border-width: 2px;
-            box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25);
-          "
-        />
-
-        <div class="form" style="margin-top: 30px;; ">
-          <h3>Headline</h3>
-          <input
-            placeholder="Type here..."
-          />
-        </div>
-
-        <div class="form" style="margin-top: 20px">
-          <h3>Body</h3>
-          <input
-            placeholder="Type here..."
-          />
-        </div>
-
-        <div class="form" style="margin-top: 20px">
-          <h3>Visi</h3>
-          <input
-            placeholder="Type here..."
-          />
-        </div>
-
-        <div class="form" style="margin-top: 20px">
-          <h3>Misi</h3>
-          <input
-            placeholder="Type here..."
-          />
-        </div>
-        <button class="buttonSave">Save Profile</button>
-      </div>
-    </div>
   </body>
 </html>
