@@ -9,18 +9,27 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/editProfileCompany.css" />
+ <link rel="stylesheet" href="css/user_editprof.css" />
+
     <title>Home - Giggle’s</title>
     <link rel="icon" type="image/png" href="src/Logo.png" />
   </head>
 
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: url("src/Background1.png") lightgray 50% / cover no-repeat;
+    }
+  </style>
+
   <body>
     <nav>
       <div class="navMenu">
-        <div class="menuActive">Home</div>
-        <div class="menuNonActive">Gallery</div>
-        <div class="menuNonActive">Jobs</div>
-        <div class="menuNonActive">About Us</div>
+        <a href="HomeUser.html"><div class="menuActive">Home</div></a>
+        <a href=""><div class="menuNonActive">Gallery</div></a>
+        <a href=""><div class="menuNonActive">Jobs</div></a>
+        <a href="About.html"><div class="menuNonActive">About Us</div></a>
       </div>
 
       <div class="navGiggle">
@@ -29,53 +38,103 @@
 
       <div class="navRight">
         <div class="notification">
-          <img src="src/icnNotification.png" alt="" style="width: 30px" />
+          <a href="Notification.html"
+            ><img src="src/icnNotification.png" alt="" style="width: 30px"
+          /></a>
         </div>
         <div class="profile">
-          <img src="src/profile.png" alt="" style="width: 75px" />
+          <img
+            src="src/profile.png"
+            class="profile-icon"
+            alt=""
+            style="width: 75px"
+            onclick="toggleDropdown()"
+          />
+          <div
+            class="dropdown-menu"
+            id="dropdownMenu"
+            style="z-index: 10000"
+            onclick="event.stopPropagation()"
+          >
+            <a href="user-post.html" class="dropdown-item">
+              <span class="bi bi-person"></span>
+              <p>Profile</p></a
+            >
+            <a href="#" class="dropdown-item">
+              <span class="bi bi-box-arrow-right"></span>
+              <p>Sign Out</p></a
+            >
+          </div>
         </div>
       </div>
+      <script>
+        function toggleDropdown() {
+          var dropdown = document.getElementById("dropdownMenu");
+          dropdown.style.display =
+            dropdown.style.display === "block" ? "none" : "block";
+        }
+        // Close the dropdown if clicked outside
+        window.onclick = function (event) {
+          if (!event.target.matches(".profile-icon")) {
+            var dropdown = document.getElementById("dropdownMenu");
+            if (dropdown && dropdown.style.display === "block") {
+              dropdown.style.display = "none";
+            }
+          }
+        };
+      </script>
     </nav>
+
+
 
     <div class="header">
       <div class="containerHeader">
-        <a href="Company-EditProfile.html"
-          ><div class="header-item">Edit Profile</div></a
+        <a href="user-editprofile.html"
+        ><div class="header-item">Edit Profile</div></a
+      >
+        <a href="user-socialProfile.html"
+          ><div class="header-item">Social Profile</div></a
         >
-        <a href="Company-EditAbout.html"
-          ><div class="header-item active">About</div></a
+        <a href="user-EditResume.html"
+          ><div class="header-item active">Resume</div></a
         >
-        <a href="Company-EditPostJob.html"
-          ><div class="header-item">Post a Jobs</div></a
+        <a href="user-EditWorkSpace.html"
+          ><div class="header-item">Work Preferences</div></a
         >
       </div>
       <hr style="margin: 0 2%; margin-top: -0.5%; border-width: 2px" />
     </div>
 
-    <div class="containerEditAbout">
-      <div class="containerEdit">
-        <div class="tittle">About Company</div>
-        <hr
-          style="
-            margin-top: 13px;
-            border-width: 2px;
-            box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25);
-          "
-        />
+ 
+        
+        <div class="containerEditProfile">
+          <div class="containerEdit">
+          <div class="new-profile">
+            
+                <h3>Social Profile</h3>
+                <div class="divider"></div>
+                <div class="form-grid">
+                  <div class="form-group">
+                    <h3>Linkedln</h3>
+                    <input type="text" placeholder="Enter your name" />
+                    <h3>Twitter</h3>
+                    <input type="text" placeholder="Enter your name" />
+                    <h3>Instagram</h3>
+                    <input type="text" placeholder="Enter your name" />
+                
+                    
+              </div>
+              
+          </div>
+          <button class="buttonSave">Save Profile</button>
+      </div>
+     
+      </div>
 
-        <div class="form" style="margin-top: 30px">
-          <h3>Headline</h3>
-          <input
-         
-            placeholder="Type here..."
-          />
         </div>
 
         
          
-        </div>
-       
-      </div>
-    </div>
+        
   </body>
 </html>
