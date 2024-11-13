@@ -5,7 +5,8 @@ body {
 
 .containerEditProfile {
     margin: 5% 4%;
-    height: 850vh;
+    height: 150vh;
+    padding: 4%;
     max-height: 1400px;
     background: rgba(153, 153, 153, 0.26);
     filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
@@ -13,6 +14,30 @@ body {
     border-radius: 22px;
  
 }
+.containerEditProfileup1 {
+  margin: 5% 4%;
+  height: 60vh;
+  padding: 4%;
+  max-height: 1400px;
+  background: rgba(153, 153, 153, 0.26);
+  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
+  backdrop-filter: blur(17px);
+  border-radius: 22px;
+
+}
+
+.containerEditProfileup2 {
+  margin: 5% 4%;
+  height: 60vh;
+  padding: 4%;
+  max-height: 1400px;
+  background: rgba(153, 153, 153, 0.26);
+  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
+  backdrop-filter: blur(17px);
+  border-radius: 22px;
+
+}
+
 .containerEditProfile2 {
   margin: 5% 4%;
   height: 850vh;
@@ -48,8 +73,9 @@ body {
 
 .containerEditWorkSpace {
   margin: 5% 4%;
-  height: 150vh;
+  height: 60vh;
   max-height: 1080px;
+  padding: 4%;
   background: rgba(153, 153, 153, 0.26);
   filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
   backdrop-filter: blur(17px);
