@@ -233,6 +233,7 @@ h3 {
 .form-group {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 input {
@@ -244,12 +245,14 @@ input {
   box-shadow: 0px 0px 11.6px 0px rgba(0, 0, 0, 0.66) inset;
   color: #ddd;
   outline: none;
+  width: 100%; /* Atur lebar input agar tidak melebihi kontainer */
+    max-width: 1200px;  /* Atur lebar maksimal sesuai dengan preferensi */
   font-size: 20px;
 }
 
 input[placeholder="Enter your location"] {
-    width: 100%;  /* Lebar penuh kontainer */
-    height: 120px; /* Atur tinggi sesuai keinginan */
+    width: 90% !important;  /* Lebar penuh kontainer */
+    height: 100px; /* Atur tinggi sesuai keinginan */
   }
 
 
@@ -298,6 +301,7 @@ input[placeholder="Enter your location"] {
   color: #ccc;
   font-size: 16px;
 }
+
 .input-containerCategory input::placeholder {
   font-size: 16px;
 }
@@ -401,6 +405,7 @@ input[placeholder="Enter your location"] {
 .form-group-edit {
     display: flex;
     flex-direction: column;
+   
 }
 
 /* Tampilan khusus untuk Additional Work History */

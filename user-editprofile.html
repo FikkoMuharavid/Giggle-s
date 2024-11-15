@@ -14,12 +14,20 @@
     <link rel="icon" type="image/png" href="src/Logo.png" />
   </head>
 
+
   <style>
-    body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../src/Background2.png");
-    font-family: inter;
+   html, body {
+  height: 100%;  /* Pastikan html dan body memiliki tinggi 100% */
+  margin: 0;  /* Hapus margin default */
 }
+
+body {
+  width: 100%;
+  height: 100%;  /* Pastikan body memiliki tinggi penuh */
+  background: url("src/Background1.png") center/cover no-repeat fixed;  /* Mengatur background gambar */
+  font-family: 'Inter', sans-serif;  /* Gunakan font Inter */
+}
+
 
 .containerEditProfile {
     margin: 5% 4%;
@@ -32,15 +40,22 @@
  
 }
 .containerEditProfile2 {
-  margin: 5% 4%;
-  height: 850vh;
+  position: relative;
+  z-index: 5; /* Nilai lebih rendah dari .header */
+  top: 30px;
+  margin: -4% auto; /* Mengatur margin atas dan bawah, lalu memusatkan elemen */
+  width: 90vw; /* Mengatur lebar menjadi 90% dari viewport */
+  height: 700vh;
   max-height: 1400px;
   background: rgba(153, 153, 153, 0.26);
   filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
   backdrop-filter: blur(17px);
   border-radius: 22px;
-
+  margin-left: 4.5%;
 }
+
+
+
 
 .containerEdit {
   width: 115%;
@@ -61,7 +76,6 @@
   position: relative;
   left: -15%; /* Menggeser ke kiri */
 }
-
 
 
 .containerEditSocialProfile {
@@ -95,7 +109,7 @@
 }
 
 .header {
-  position: absolute;
+  position: relative;
   margin-top: 2%;
   left: 50%;
   transform: translateX(-50%);
@@ -105,7 +119,8 @@
   background: rgba(153, 153, 153, 0.26);
   filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.8));
   backdrop-filter: blur(17px);
-  z-index: 99;
+  z-index: 10; /* Nilai z-index lebih tinggi */
+
 }
 
 .containerHeader {
@@ -131,12 +146,8 @@
   line-height: normal;
 }
 
-.header-item.active {
-  text-shadow: 0px 0px 5px #b04e75;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
+
+
 
 .containerEdit {
   margin-top: 20px; /* Sesuaikan dengan elemen atas */
@@ -169,7 +180,6 @@
 .profile-info {
   margin-bottom: 20px;
 }
-
 
 
 .containerEditpoto{
@@ -267,7 +277,6 @@ input[placeholder="Enter your location"] {
   }
 
 
-
 /* Post Job */
 .containerCategory {
   margin-top: 20px;
@@ -348,7 +357,6 @@ input[placeholder="Enter your location"] {
   }
   
 
-
 .profile-container {
     display: flex;
     align-items: center; /* Menyelaraskan secara vertikal */
@@ -415,7 +423,6 @@ input[placeholder="Enter your location"] {
   padding: 0;
  
 }
-
 
 .form-grid-edit {
     padding-top: 2%;
@@ -518,7 +525,6 @@ input[type="radio"]:checked + .label-text + .radio-circle::after {
     opacity: 1;
 }
 
-
 .containerEditProfile1 {
   margin-bottom: 20px;
 }
@@ -537,9 +543,7 @@ input[type="radio"]:checked + .label-text + .radio-circle::after {
   margin: 10px 0;
 }
 
-.form-group-edit {
-  margin-bottom: 20px;
-}
+
 
 .two-column {
   display: flex;
@@ -579,7 +583,6 @@ input {
   background-color: #e60000;
 }
 
-
 .form-grid-edit {
   display: flex;
   flex-direction: column;
@@ -617,14 +620,16 @@ input {
   cursor: pointer;
   margin-top: 10px;
 }
+
   </style>
+
   <body>
     <nav>
       <div class="navMenu">
-        <div class="menuActive">Home</div>
-        <div class="menuNonActive">Gallery</div>
-        <div class="menuNonActive">Jobs</div>
-        <div class="menuNonActive">About Us</div>
+        <a href="HomeUser.html"><div class="menuActive">Home</div></a>
+        <a href=""><div class="menuNonActive">Gallery</div></a>
+        <a href=""><div class="menuNonActive">Jobs</div></a>
+        <a href="About.html"><div class="menuNonActive">About Us</div></a>
       </div>
 
       <div class="navGiggle">
@@ -633,24 +638,65 @@ input {
 
       <div class="navRight">
         <div class="notification">
-          <img src="src/icnNotification.png" alt="" style="width: 30px" />
+          <a href="Notification.html"
+            ><img src="src/icnNotification.png" alt="" style="width: 30px"
+          /></a>
         </div>
         <div class="profile">
-          <img src="src/profile.png" alt="" style="width: 75px" />
+          <img
+            src="src/profile.png"
+            class="profile-icon"
+            alt=""
+            style="width: 75px"
+            onclick="toggleDropdown()"
+          />
+          <div
+            class="dropdown-menu"
+            id="dropdownMenu"
+            style="z-index: 10000"
+            onclick="event.stopPropagation()"
+          >
+            <a href="user-post.html" class="dropdown-item">
+              <span class="bi bi-person"></span>
+              <p>Profile</p></a
+            >
+            <a href="#" class="dropdown-item">
+              <span class="bi bi-box-arrow-right"></span>
+              <p>Sign Out</p></a
+            >
+          </div>
         </div>
       </div>
+      <script>
+        function toggleDropdown() {
+          var dropdown = document.getElementById("dropdownMenu");
+          dropdown.style.display =
+            dropdown.style.display === "block" ? "none" : "block";
+        }
+        // Close the dropdown if clicked outside
+        window.onclick = function (event) {
+          if (!event.target.matches(".profile-icon")) {
+            var dropdown = document.getElementById("dropdownMenu");
+            if (dropdown && dropdown.style.display === "block") {
+              dropdown.style.display = "none";
+            }
+          }
+        };
+      </script>
     </nav>
+
+
 
     <div class="header">
       <div class="containerHeader">
         <a href="User-EditProfile.html"
-          ><div class="header-item active">Edit Profile</div></a
+          ><div class="header-item">Edit Profile</div></a
         >
         <a href="user-socialProfile.html"
           ><div class="header-item">Social Profile</div></a
         >
         <a href="user-EditResume.html"
-          ><div class="header-item">Resume</div></a
+          ><div class="header-item active">Resume</div></a
         >
         <a href="user-EditWorkSpace.html"
           ><div class="header-item">Work Space</div></a
@@ -658,6 +704,7 @@ input {
       </div>
       <hr style="margin: 0 2%; margin-top: -0.5%; border-width: 2px" />
 
+    </div>
     <div class="containerEditProfile2">
       <div class="containerEditwork">
         <div class="changephoto">
@@ -721,6 +768,7 @@ input {
               <h3>Additional Education</h3>
               <div class="three-column">
                   <input type="text" placeholder="Degree" />
+                  <span class="at-text">at</span>
                   <input type="text" placeholder="School / University" />
                   <input type="text" placeholder="Year" />
               </div>
@@ -734,5 +782,5 @@ input {
 
 
 
-</body>
-</html>
+  </body>
+  </html>
